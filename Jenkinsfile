@@ -9,7 +9,7 @@ pipeline {
         stage('source') {
             steps {
                 git 'https://github.com/JayDevOps1016/aws_codebuild_codedeploy_nodeJs_demo.git'
-                
+                echo 'this time jenkins file also run from github'
                 echo 'index.js file content'
                 sh 'cat index.js'
             }
